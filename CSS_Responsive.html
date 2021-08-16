@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CSS Web Page</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                line-height: 1.5cm;
+
+            }
+            #header{
+                background-color:black ;
+                font-family: Arial;
+                height: 100px;
+            }
+            #contentwrapper
+            {
+                float: left;
+                width: 100%;
+            }
+            #contentcoloumn{
+                margin: 0 230px 0 230px;
+            }
+            #leftcoloumn{
+                float: left;
+                width: 230px;
+                margin-left: -100%;
+                background-color:powderblue;
+            }
+            #rightcoloumn{
+                float: left;
+                width: 230px;
+                margin-left: -230px;
+                background-color:thistle;
+
+            }
+            .innertext{
+                margin: 20;
+                font-family: Arial;
+                color: darkgrey;
+            }
+            #footer{
+                clear: left;
+                width: 100%;
+                background: black;
+                color: rgb(197, 188, 151);
+                font-family: Arial;
+            text-align: center;
+        padding: 4px;
+                }
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    background-color: black;
+                }
+                li{
+                    float:left;
+                    border-right: 1px solid black;
+
+                }
+                li:last-child{
+                    border-right: none;
+
+                }
+                li a{
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+
+                }
+                li a:hover:not(.active){
+                    background-color: teal;
+                }
+                .active{
+                    background-color: #0099ff;
+
+                }
+                @media (max-width:840px){
+                    #leftcoloumn{
+                        margin-left: -100%;
+
+                    }
+                    #rightcoloumn{
+                        float: none;
+                        width: 100%;
+                        margin-left: 0;
+                        clear: both;
+                    }
+                    #contentcoloumn{
+                        margin-right: 0;
+                    }
+                }
+                @media (max-width:600px){
+                
+                    #leftcoloumn{
+                        float: none;
+                        width: 100%;
+                        margin-left: 0;
+                        clear: both;
+                    }
+                    #contentcoloumn{
+                        margin-left`: 0;
+                    }
+                }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <ul style="display:inline;">
+                    <li><a class="active"href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="contentwrapper">
+                <div class="innertext">
+                    <b>Welcome!</b><br/>Wikipedia has received praise for its enablement of the democratization of knowledge, extent of coverage, unique structure, culture, and reduced amount of commercial bias, but criticism for exhibiting systemic bias, particularly gender bias against women.[11] Its reliability was frequently criticized in the 2000s, but has improved over time and has been generally praised in the late 2010s and 2020s.[12][3][11] Its coverage of controversial topics such as American politics and major events such as the COVID-19 pandemic has received substantial media attention. At various points, Wikipedia has been censored by world governments, ranging from the blocking of specific pages to bans on the entire site. Wikipedia has become an element of popular culture, with references in books, films and academic studies. In 2018, Facebook and YouTube announced that they would help users detect fake news by suggesting fact-checking links to related Wikipedia articles
+
+                </div>
+            
+        </div>
+        </div>
+        <div id="leftcoloumn">
+        <div class="innertext">
+            <b>Left Column:<em>230px</em></b></br>
+            Wikipedia has received praise for its enablement of the democratization of knowledge, extent of coverage, unique structure, culture, and reduced amount of commercial bias, but criticism for exhibiting systemic bias, particularly gender bias against women.[11] Its reliability was frequently criticized in the 2000s, but has improved over time and has been generally praised in the late 2010s and 2020s.[12][3][11] Its coverage of controversial topics such as American politics and major events such as the COVID-19 pandemic has received substantial media attention. At various points, Wikipedia has been censored by world governments, ranging from the blocking of specific pages to bans on the entire site. Wikipedia has become an element of popular culture, with references in books, films and academic studies. In 2018, Facebook and YouTube announced that they would help users detect fake news by suggesting fact-checking links to related Wikipedia articles
+
+        </div>
+        </div>
+        <div id="rightcoloumn">
+            <div class="innertext">
+                <b>Right Column:<em>230px</em></b></br>
+                Wikipedia has received praise for its enablement of the democratization of knowledge, extent of coverage, unique structure, culture, and reduced amount of commercial bias, but criticism for exhibiting systemic bias, particularly gender bias against women.[11] Its reliability was frequently criticized in the 2000s, but has improved over time and has been generally praised in the late 2010s and 2020s.[12][3][11] Its coverage of controversial topics such as American politics and major events such as the COVID-19 pandemic has received substantial media attention. At various points, Wikipedia has been censored by world governments, ranging from the blocking of specific pages to bans on the entire site. Wikipedia has become an element of popular culture, with references in books, films and academic studies. In 2018, Facebook and YouTube announced that they would help users detect fake news by suggesting fact-checking links to related Wikipedia articles
+    
+            </div>
+            </div>
+            <div id="footer">Footer</div>
+    </div>
+    </body>
+</html>
